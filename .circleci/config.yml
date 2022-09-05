@@ -5,7 +5,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run: echo "hello circle"
+      - run: echo "hello circle hi"
 
 workflows:
   workflow:
