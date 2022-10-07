@@ -5,12 +5,16 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run: echo "hello circle hi"
+      - run: echo "hello circle"
 
 workflows:
   workflow:
     jobs:
       - build:
           name: spec
+      - build:
+          name: test
+      - build:
+          name: a/test
       - build:
           name: a/spec
