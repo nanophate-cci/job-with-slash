@@ -13,4 +13,8 @@ workflows:
       - build:
           name: spec
       - build:
+          name: test
+      - build:
+          name: a/test
+      - build:
           name: a/spec
